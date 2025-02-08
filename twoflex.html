@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bigbox{
+            display:flex;
+            flex-direction: row;
+            background-color: beige;
+            border: 2px solid black;
+        }
+        .rightbox{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border: 2px solid black;
+            box-shadow: 100px 100px aqua;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .leftbox{
+            align-items: center;}
+
+         @media(max-width: 750px){
+            .bigbox{
+                flex-direction: column;
+            }
+         }
+
+    </style>
+</head>
+<body>
+    
+    <div class="bigbox">
+        <div class="rightbox">
+            <div class="box1"> Harsh Srivastava</div>
+            <div class="box2"> Full Stack Web Developer</div>
+        </div>
+        <div class="leftbox"> <img src="Harsh_Srivastava_Badge_Contributor_GSSoC2024-Extd.png" alt="Certificate" height="400px" width="400px"></div>
+
+
+
+    </div>
+</body>
+</html>

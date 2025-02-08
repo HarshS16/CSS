@@ -1,0 +1,57 @@
+<!-- CAscading style sheets(css) is a tool used to add style(design) to the html webpage
+we can add css in 3 ways Inline , internal, external -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="externalcss.css">
+    <!-- this is internal css -->
+    <style>h1{
+        color: green;
+    }
+    #a1{
+        color: hsl(166, 82%, 48%);
+    }
+    
+    .para{
+        font-style: italic;
+    }
+    p,article{
+        width: 500px;
+
+    }
+
+    </style>
+</head>
+<body>
+    <!-- if there is clash between inline and internal css then inline is given more priority if we want internal to 
+     be more powerful we can write important! in internal -->
+    <h1>Welcome to Pixelpeak</h1>
+    <!-- this is inline css -->
+    <p style="background-color: yellow;" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam expedita, fuga exercitationem minima inventore provident totam eveniet delectus doloremque? Nihil?</p>
+    <p style="background-color: aqua;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deleniti enim repellat illum sit saepe obcaecati quibusdam corporis ipsa vero?
+    </p>
+    <article id="a1"> JSS UNIVERSITY IS THE SHIITIEST UNIVERSITY</article>
+    <!-- Selectors- used to target and style specific html elements 
+     elements are tags (p,h1,h2,article,sections)
+     we can use element selector like p{
+    color: green;
+}
+    we can use id also to style like #a1{
+        background-color: red;
+    }
+        we can also use classes to style the elements
+        .para{
+        font-style: italic;
+    }
+
+        
+         
+
+      -->
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid blue;
+            font-size: 15rems;
+
+        }
+        .parent{
+            border: 1px solid black;
+            background-color: beige;
+            width: 50%;
+        }
+        /* The above  50% refers to 50% of the immediate ancestor of the parent tag which is the body tag */
+        .child{
+            border: 1px solid green;
+             background-color: cyan; 
+            /* width: 20%; 
+            height: 100vh;  */
+            font-size: 100px;
+             }
+             /* By default font size is 16px , em and m are relative units
+             10m refers to 16*10 px= 160px
+             em unit is based on the font size of the parent for ex if in the parent 
+             element we set the font size as 10px and in an element inside the parent
+             we declare the font size as 10em then this element will take size as 100px
+             rem is a relative quantity relative to html tag  */
+             /* THis 20% refers to the 20% of the parent div(as it is the immediate
+              ancestor of the div child) */
+    </style>
+</head>
+<body>
+    <div class="box"> Welcome to my Webpage</div>
+    <br>
+    <br>
+    <div class="parent">
+        <div class="child">
+            CHILD
+
+        </div>
+    </div>
+</body>
+</html>

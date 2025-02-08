@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 10px;
+        }
+        span{
+            border: 2px solid blue;
+            height: 100px;
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            display: inline-block;
+        }    </style>
+</head>
+<body>
+    <!-- Block elements are div,h,p...
+     They have many properties like they occupy one complete line
+     they take width from extreme left to extreme right of the page
+     we can give custom height and width to them
+     we can give padding , margin -->
+    <div>Hello Everyone </div>
+    <div>No hello this time</div>
+    <!-- Div is a block element that is why the 2 are printed in different lines
+     Span is an inline element so if we have two spans without break , they will print in one line
+     If space is available it will print in one line otherwise in next line
+     we cant apply custom width, height to inline elements
+     custom margin can be applied only in horizontal direction
+     padding can be appplied
+     we can convert inline to block by changing display property
+      -->
+     <span>Harsh Here</span>
+     <span>Harsh again</span>
+         
+    </div>
+</body>
+</html>

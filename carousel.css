@@ -1,0 +1,14 @@
+body {
+	background: linear-gradient(45deg, #dedede, #eeeeee);
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+@media (max-width: 767px) {
+	.container {
+		height: 100%;
+	}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding: 8px;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+             /*above statement places content in the center of the main axis here it is horizontal axis
+             because direction is row  */
+             /* justify-content: space-between; */
+             align-items: center;
+             /* the above statement places content in the center of the cross axis here it is vertical axis */
+
+
+            
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 1px;
+        }
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: yellow;
+            /* flex-shrink: 4; */
+        }
+        #box3{
+            background-color: pink;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"> BOX1</div>
+        <div class="box" id="box2"> BOX2</div>
+        <div class="box" id="box3"> BOX3</div>
+
+    </div>
+</body>
+</html>

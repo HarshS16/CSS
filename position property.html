@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin: 20px;
+        }
+        div{
+            border: 2px solid black;
+            background-color: beige;
+        }
+        .image1{
+            position:sticky;
+            top: 100px;
+            
+        }
+        .image2{
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+        .image4{
+            position: fixed;
+        }
+        .container{
+            height: 10000px;
+            width: 5000px;
+        }
+        .box{
+            height: 5000px;
+            background-color: aquamarine;
+        }
+        /* relative positioning is done relative to the current window
+        in relative positioning gap is maintained but it is not maintained in absolute positioning 
+        in absolute positioning it is positioned relative to its closest positioned ancestor
+        we can use same left right top bottom in absolute positioning also
+        sticky image sticks to the current position only till the current container is positioned
+        when the container ends the sticky image also moves above
+        but when the positioned is made fixed then the image sticks to the entire webpage
+         */
+
+         /* Size Units]
+
+         
+         
+         */
+
+
+    </style>
+</head>
+<body>
+    <h1>Skilled Punjab</h1>
+    <div class="container"> 
+
+        <img src="logo2.JPG" alt="SIH Logo" height="300px" width="300px" class="image1">
+        <img src="logo2.JPG" alt="SIH Logo" height="300px" width="300px" class="image2">
+        <img src="logo2.JPG" alt="SIH Logo" height="300px" width="300px" class="image3" >
+        <img src="logo2.JPG" alt="SIH Logo" height="300px" width="300px" class="image4">
+
+    </div>
+    <div class="box"></div>
+
+    <!-- Img tag is also an inline tag</body> -->
+</html>
