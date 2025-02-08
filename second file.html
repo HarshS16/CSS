@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed DID Agent</title>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <!-- Paste your DID.com Embed Code Below -->
+    <div id="did-agent">
+        <script type='text/javascript' src="https://www.botlibre.com/scripts/sdk.js"></script>
+    <script type='text/javascript'>
+SDK.applicationId = "1764950669617408576";
+var sdk = new SDKConnection();
+var web = new WebAvatar();
+web.version = 8.5;
+web.connection = sdk;
+web.avatar = "14876059";
+web.nativeVoice = false;
+web.voice = "";
+web.voiceMod = "";
+web.width = "250";
+web.createBox();
+web.addMessage("Welcome to my website", "", "", "");
+web.processMessages();
+    </script>
+    </div>
+</body>
+</html>
